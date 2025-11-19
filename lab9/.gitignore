@@ -1,0 +1,14 @@
+# SQLite DB files
+*.db
+*.sqlite
+lab9_demo.db
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Exported data
+*.csv
+
+# IDE checkpoints
+.ipynb_checkpoints/
