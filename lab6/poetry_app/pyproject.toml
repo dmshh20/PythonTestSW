@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "lab6-poetry-app"
+version = "0.1.0"
+description = "Minimal app to demonstrate poetry environment (requests example)"
+authors = ["Student <student@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,14 @@
+# virtual envs
+my_env/
+.venv/
+env/
+venv/
+venv_practice/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+users.txt
+.Pipfile
+Pipfile.lock
+.poetry/
