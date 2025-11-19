@@ -1,0 +1,33 @@
+name: "Lab8 Manual workflow"
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Name to print'
+        required: false
+        default: 'Executer'
+  schedule:
+    - cron: '0 12 * * 1'   # щопонеділка о 12:00 UTC — змініть при потребі
+
+jobs:
+  run-demo:
+    name: Run demo job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Run Python demo
+        run: |
+          echo "Input name: ${{ github.event.inputs.name }}"
+          python -u lab8/run_me.py
+
+      - name: Optional greeting (only if name != 'Executer')
+        if: ${{ github.event.inputs.name != 'Executer' }}
+        run: echo "Hello ${{ github.event.inputs.name }} from Manual workflow"
