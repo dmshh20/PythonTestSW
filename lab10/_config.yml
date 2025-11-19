@@ -1,0 +1,8 @@
+title: "Portfolio Example"
+description: "Портфоліо студента — приклад розгортання на GitHub Pages"
+# Використайте стандартні теми GitHub Pages або замініть на бажану (minima, jekyll-theme-minimal, midnight тощо)
+theme: jekyll-theme-minima
+
+# Додаткові опції
+baseurl: "" # якщо сайт в підшляху встановіть /repository_name
+url: "https://USERNAME.github.io" # замініть USERNAME на ваш GitHub username перед публікацією
